@@ -1,0 +1,141 @@
+object TravestyGenerator: TTravestyGenerator
+  Left = 344
+  Height = 456
+  Top = 122
+  Width = 685
+  Caption = 'Travesty Generator'
+  ClientHeight = 456
+  ClientWidth = 685
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object OutputMemo: TMemo
+    Left = 7
+    Height = 368
+    Top = 56
+    Width = 457
+    Lines.Strings = (
+      'Memo1'
+    )
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object btnLoad: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Load file'
+    OnClick = btnLoadClick
+    TabOrder = 1
+  end
+  object lblSeed: TLabel
+    Left = 480
+    Height = 15
+    Top = 200
+    Width = 126
+    Caption = 'Seed for the randomiser'
+    ParentColor = False
+  end
+  object lblPattern: TLabel
+    Left = 480
+    Height = 15
+    Top = 56
+    Width = 133
+    Caption = 'Maximum Pattern length'
+    ParentColor = False
+  end
+  object lblOutput: TLabel
+    Left = 480
+    Height = 15
+    Top = 128
+    Width = 170
+    Caption = 'Number of Characters to output'
+    ParentColor = False
+  end
+  object btnGenerate: TButton
+    Left = 312
+    Height = 25
+    Top = 8
+    Width = 96
+    Caption = 'Generate text'
+    OnClick = btnGenerateClick
+    TabOrder = 2
+  end
+  object PatternLength: TSpinEdit
+    Left = 480
+    Height = 23
+    Top = 80
+    Width = 40
+    MaxValue = 8
+    MinValue = 2
+    TabOrder = 3
+    Value = 4
+  end
+  object CharacterLength: TSpinEdit
+    Left = 480
+    Height = 23
+    Top = 152
+    Width = 58
+    MaxValue = 1000
+    MinValue = 20
+    TabOrder = 4
+    Value = 300
+  end
+  object SeedValue: TSpinEdit
+    Left = 480
+    Height = 23
+    Top = 224
+    Width = 58
+    MaxValue = 1000
+    MinValue = 1
+    TabOrder = 5
+    Value = 1000
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 487
+    Height = 105
+    Top = 280
+    Width = 185
+    AutoFill = True
+    Caption = 'Text style'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 85
+    ClientWidth = 181
+    TabOrder = 6
+    object RadioProse: TRadioButton
+      Left = 6
+      Height = 43
+      Top = 0
+      Width = 169
+      Caption = 'Prose'
+      Checked = True
+      TabOrder = 1
+      TabStop = True
+    end
+    object RadioVerse: TRadioButton
+      Left = 6
+      Height = 42
+      Top = 43
+      Width = 169
+      Caption = 'Verse'
+      TabOrder = 0
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 433
+    Width = 685
+    Panels = <>
+  end
+  object OpenDialog1: TOpenDialog
+    left = 120
+    top = 8
+  end
+end
