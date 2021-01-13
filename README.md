@@ -10,5 +10,5 @@ See the [Wikipedia page](https://en.wikipedia.org/wiki/Parody_generator) for mor
 
 ![Sherlock Holmes](Screenshots/Sherlock.png)
 
-The code has been mostly preserved, I've just added a GUI to make it easier to play around with the options and included a copy of Alice in Wonderland in the source code.
-A Windows binary is available on the Releases page
+The code has been mostly preserved, I've just added a GUI to make it easier to play around with the options and included a copy of Alice in Wonderland.
+A Windows binary is available on the [Releases page](https://github.com/cyberfilth/travesty/releases/tag/2).
